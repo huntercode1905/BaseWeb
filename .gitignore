@@ -1,0 +1,14 @@
+# 忽略所有缓存文件
+*__pycache__
+
+
+# 忽略环境代码
+*.front
+*.admin
+
+# 忽略一些安装包
+
+*AdminLTE
+*centos7
+*fastDFS
+*Folio-bootstrap-4

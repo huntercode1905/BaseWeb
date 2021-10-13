@@ -1,0 +1,31 @@
+{% extends 'admin/base.html' %}
+
+
+{% block  header_css %}
+ {{ ckeditor.load_code_theme() }}
+{% endblock %}
+
+
+{% block  body %}
+<form method="post" action="{{url_for('views.add_article')}}">
+  {{ form.csrf_token }}
+  <div class="form-group">
+    {{ form.title.label }}{{ form.title(class="form-group") }}
+  </div>
+
+    <div class="form-goupp">
+      {{ form.body.label }}{{ form.body(class="form-group") }}
+    </div>
+    {{ form.submit() }}
+</form>
+
+{{ ckeditor.load() }}
+{{ ckeditor.config(name='body') }}
+
+{% endblock %}
+
+
+
+{% block  footer_js %}
+<script src="//cdn.ckeditor.com/4.9.2/standard/ckeditor.js"></script>
+{% endblock %}
