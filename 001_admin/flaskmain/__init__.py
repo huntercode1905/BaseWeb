@@ -21,6 +21,16 @@ file_log_handler.setFormatter(formatter)
 # 为全局的日志工具对象（flask app使用的）添加日志记录器
 logging.getLogger().addHandler(file_log_handler)
 
+# 日志用法
+"""
+try:
+    pass  # 需要用try的语句
+except Exception as e:
+    current_app.logger.error(e)
+    flash("数据库链接错误联系管理员处理1") # or something else
+    return redirect(url_for(''))  # 或者你要返回的东西
+"""
+
 
 
 

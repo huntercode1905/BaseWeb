@@ -2,6 +2,7 @@ from flaskmain import db
 from werkzeug.security import generate_password_hash, check_password_hash
 
 
+
 class User(db.Model):
     __tablename__ = 't_user'
     id = db.Column(db.Integer, autoincrement=True, primary_key=True)
@@ -20,6 +21,7 @@ class User(db.Model):
         return check_password_hash(self.password_hash, password)
 
 
+# 看起来很正常，其实少了很多东西
 class Article(db.Model):
     __tablename__ = 't_article'
     id = db.Column(db.Integer, autoincrement=True, primary_key=True)

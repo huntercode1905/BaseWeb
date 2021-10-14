@@ -1,6 +1,7 @@
+from flaskmain import db
 from . import admin_views
 from flaskmain.utils.commons import login_require
-from flaskmain.models import User
+from flaskmain.models import User, Article
 from flask import render_template, current_app, send_from_directory, request, url_for
 from flaskmain.forms import ArticleForm
 from werkzeug.utils import secure_filename
@@ -54,9 +55,21 @@ def add_article():
     }
     if request.method == 'POST' and form.validate_on_submit():
         title = request.form.get('title')
-        content = request.form.get('content')
+        content = request.form.get('body')
         print("title = ", title)
         print("content = ", content)
+        article = Article()
+        article.title = title
+        article.content = content
+        try:
+            db.session.add(article)
+            db.session.commit()
+        except Exception as e:
+            current_app.logger.error(e)
+            flush('数据库链接错误，请联系管理员处理-1')
+            return render_template('admin/add_articles.html', context=context, form=form)
+        flush("文章添加成功！")
+        return redirect(url_for('views.articles'))
     return render_template('admin/add_articles.html', context=context, form=form)
 
 # 文章列表

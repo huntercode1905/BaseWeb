@@ -1,13 +1,18 @@
 # 忽略所有缓存文件
 *__pycache__
 
+# 忽略日志文件
+*log/*
+
+# 忽略数据据迁移文件
+*migrations/*
+
 
 # 忽略环境代码
 *.front
 *.admin
 
 # 忽略一些安装包
-
 *AdminLTE
 *centos7
 *fastDFS
