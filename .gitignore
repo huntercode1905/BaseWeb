@@ -2,18 +2,21 @@
 *__pycache__
 
 # 忽略日志文件
-*log/*
+logs/*
 
 # 忽略数据据迁移文件
-*migrations/*
+migrations/*
 
 
 # 忽略环境代码
 *.front
 *.admin
+*.dytt8
 
 # 忽略一些安装包
-*AdminLTE
-*centos7
-*fastDFS
-*Folio-bootstrap-4
+resources/*
+
+# 任何文件夹下的readme.md要保留
+!readme.md
+!README.MD
+!README

@@ -1,0 +1,53 @@
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225  * Restarting with stat
+WARNING _internal.py:225  * Debugger is active!
+INFO _internal.py:225  * Debugger PIN: 862-543-603
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:44] "[32mGET / HTTP/1.1[0m" 302 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:44] "GET /login HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:44] "GET /static/admin/plugins/fontawesome-free/css/all.min.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:44] "GET /static/admin/plugins/icheck-bootstrap/icheck-bootstrap.min.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:44] "GET /static/admin/dist/css/adminlte.min.css HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:44] "GET /static/admin/plugins/jquery/jquery.min.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:44] "GET /static/admin/plugins/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:44] "GET /static/admin/dist/js/adminlte.min.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:44] "[36mGET /static/js/commons.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:44] "[36mGET /static/js/login.js HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:45] "GET /static/admin/plugins/fontawesome-free/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:45] "GET /image_codes/951598AAE1D0A3DADCFE2E5C99DDCF483828.png HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:45] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:57] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:57] "GET / HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:57] "GET /static/admin/dist/img/user8-128x128.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:57] "[36mGET /static/admin/dist/img/user1-128x128.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:57] "GET /static/admin/dist/js/demo.js HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:57] "GET /static/admin/dist/img/user2-160x160.jpg HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:57] "[36mGET /static/admin/dist/img/user3-128x128.jpg HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:57] "[36mGET /static/admin/dist/img/AdminLTELogo.png HTTP/1.1[0m" 304 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:57] "GET /static/admin/plugins/fontawesome-free/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:57] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:03:59] "GET / HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:04:00] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:04:03] "GET / HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:04:03] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:225  * Detected change in '/home/alex/work-dubai/programs/BaseWeb/001_admin/flaskmain/views/index.py', reloading
+INFO _internal.py:225  * Restarting with stat
+WARNING _internal.py:225  * Debugger is active!
+INFO _internal.py:225  * Debugger PIN: 862-543-603
+INFO _internal.py:225  * Detected change in '/home/alex/work-dubai/programs/BaseWeb/001_admin/flaskmain/views/index.py', reloading
+INFO _internal.py:225  * Restarting with stat
+WARNING _internal.py:225  * Debugger is active!
+INFO _internal.py:225  * Debugger PIN: 862-543-603
+INFO _internal.py:225  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:225  * Restarting with stat
+WARNING _internal.py:225  * Debugger is active!
+INFO _internal.py:225  * Debugger PIN: 862-543-603
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:13:18] "GET / HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:13:18] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:13:20] "GET / HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:13:20] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:13:54] "GET /base_information HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:13:54] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:13:56] "GET / HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:13:56] "GET /favicon.ico HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:13:58] "GET / HTTP/1.1" 200 -
+INFO _internal.py:225 127.0.0.1 - - [17/Oct/2021 18:13:58] "GET /favicon.ico HTTP/1.1" 200 -

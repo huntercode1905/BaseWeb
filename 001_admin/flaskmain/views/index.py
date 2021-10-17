@@ -35,9 +35,9 @@ def base_information():
 @login_require
 def articles():
     """
-
-    params:
-    return:
+    中文解释
+    params: 参数
+    return: 返回
     """
     context = {
         "title": "文章列表"
@@ -76,7 +76,10 @@ def add_article():
 @admin_views.route('/article')
 @login_require
 def article():
-    pass
+    context = {
+        "title": "文章列表"
+    }
+    return render_template('admin/articles.html', context=context)
 
 
 # @admin_views.route('/files/<path:filename>')
