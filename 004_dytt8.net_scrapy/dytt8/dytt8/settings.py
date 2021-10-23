@@ -118,7 +118,10 @@ ROBOTSTXT_OBEY = False
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
    'dytt8.middlewares.RandomUserAgentMiddleware': 543,
+   'dytt8.middlewares.RandomProxyMiddleware': 555,
 }
+
+PROXY_POOL_URL = 'http://localhost:5555/random'
 
 # Enable or disable extensions
 # See https://docs.scrapy.org/en/latest/topics/extensions.html

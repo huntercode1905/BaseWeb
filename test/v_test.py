@@ -35,3 +35,13 @@ headers = {
 }
 
 requests.get('http://ocsp.usertrust.com/MFYwVKADAgEAME0wSzBJMAkGBSsOAwIaBQAEFM0w0kw0OoKrHwVwFYrXoQd2KZLpBBRTeb9aqitKz1SA4dibwJ3ysgNmywIQfVtRJrR2uhHbdBYLvFMNpw%3D%3D',headers=headers)
+
+
+headers = {
+    'Host':'m3u8.91-tv.me:443',
+    'Proxy-Connection':'keep-alive',
+    'Accept':'*/*',
+    'User-Agent':'Dalvik/2.1.0 (Linux; U; Android 10; M2006C3LG MIUI/V12.0.16.0.QCDMIXM)'
+}
+
+requests.get('https://m3u8.91-tv.me',headers=headers)

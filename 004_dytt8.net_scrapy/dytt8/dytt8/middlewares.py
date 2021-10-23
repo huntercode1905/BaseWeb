@@ -12,6 +12,8 @@ from itemadapter import is_item, ItemAdapter
 from .settings import USER_AGENTS
 # 导入 random
 import random
+import logging
+import requests
 
 
 class RandomUserAgentMiddleware():
@@ -19,17 +21,49 @@ class RandomUserAgentMiddleware():
         # 发起request请求之前，需要加什么，在这里处理
         request.headers['User-Agent'] = random.choice(USER_AGENTS)
         print('%'*40)
-        print(request.headers)
-        print(request.url)
+        print(dir(request.meta))
+        print(request.meta.get('retry_times'))
         print('%'*40)
 
     def process_response(self, request, response, spider):
         # 得到response之后，处理response，在这里
-        pass
+        # 注意要返回 response
+        return response
 
     def process_exception(self, request, exception, spider):
         # 请求异常在这里处理
         pass
+
+class RandomProxyMiddleware():
+    def __init__(self, proxy_url):
+        self.logger = logging.getLogger(__name__)
+        self.proxy_url = proxy_url
+
+    def get_random_proxy(self):
+        try:
+            response = requests.get(self.proxy_url)
+            if response.status_code == 200:
+                proxy = response.text
+                return proxy
+        except requests.ConnectionError:
+            return False
+
+    def process_request(self, request, spider):
+        # print("尝试添加代理")
+        if request.meta.get('retry_times'):
+            # 赋值代理的判断条件是当前 retry_times 不为空，
+            # 也就是说第一次请求失败之后才启用代理，因为使用代理后访问速度会慢一些
+            proxy = self.get_random_proxy()
+            print("proxy = ", proxy)
+            if proxy:
+                uri = 'https://{proxy}'.format(proxy=proxy)
+                self.logger.debug(' 使用代理成功 ' + proxy)
+                request.meta['proxy'] = uri
+
+    @classmethod
+    def from_crawler(cls, crawler):
+        settings = crawler.settings
+        return cls(proxy_url=settings.get('PROXY_URL'))
 
 class Dytt8SpiderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
